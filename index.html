@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Grade System</title>
+</head>
+<body>
+
+    <h1>
+        Student Grade System
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        Група:
+        <input type="text" id="groupName" placeholder="наприклад 9-А">
+    </h1>
+
+    <h2>1. Додати студента</h2>
+    <input type="text" id="studentName" placeholder="Ім'я студента">
+    <input type="email" id="studentEmail" placeholder="Email студента">
+    <button onclick="addStudent()">Додати студента</button>
+
+    <h2>2. Додати предмет</h2>
+    <input type="text" id="subjectName" placeholder="Назва предмета">
+    <button onclick="addSubject()">Додати предмет</button>
+
+    <h2>3. Додати або виправити оцінки</h2>
+
+    Студент:
+    <select id="studentSelect">
+        <option value="">Оберіть студента</option>
+    </select>
+
+    Предмет:
+    <select id="subjectSelect">
+        <option value="">Оберіть предмет</option>
+    </select>
+
+    <input type="text" id="gradesInput" placeholder="Оцінки через кому: 5, 10, 4">
+
+    <button onclick="addGrades()">Додати оцінки</button>
+    <button onclick="replaceGrades()">Замінити оцінки</button>
+
+    <h2>4. Journal</h2>
+<button onclick="renderJournal()">Оновити журнал</button>
+<button onclick="clearJournal()">Очистити журнал</button>
+
+    <p id="message"></p>
+    <div id="journal"></div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
